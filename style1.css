@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+.circle-1{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 10%;
+    top: 80%;
+    border-radius: 100%;
+    background-color: #EA031A; 
+    box-shadow: 0px 0px 3px 1px #EA031A;
+}
+.circle-2{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 32%;
+    top: 10%;
+    border-radius: 100%;
+    background-color: #68F524; 
+    box-shadow: 0px 0px 3px 1px #68F524;
+}
+.circle-3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 45.7%;
+    top: 10%;
+    border-radius: 100%;
+    background-color: #8E0040; 
+    box-shadow: 0px 0px 3px 1px #8E0040;
+}
+.circle-4{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 52.5%;
+    top: 10%;
+    border-radius: 100%;
+    background-color: #CF6C20; 
+    box-shadow: 0px 0px 3px 1px #CF6C20;
+}
+.circle-5{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 70.6%;
+    top: 10%;
+    border-radius: 100%;
+    background-color: #E6771F; 
+    box-shadow: 0px 0px 3px 1px #E6771F;
+}
+.container{
+    justify-content: center;
+    margin-top: 5%; 
+}
+.circle-1:hover{
+    animation: circle 1.2s ease-out;
+    box-shadow: 0px 0px 10px 1px #EA031A;
+    background-color: #EA031A; 
+}
+.circle-2:hover{
+    animation: circle 1.2s ease-out;
+    box-shadow: 0px 0px 10px 1px #68F524;
+    background-color: #68F524; 
+}
+.circle-3:hover{
+    animation: circle 1.2s ease-out;
+    box-shadow: 0px 0px 10px 1px #8E0040;
+    background-color: #8E0040; 
+}
+.circle-4:hover{
+    animation: circle 1.2s ease-out;
+    box-shadow: 0px 0px 10px 1px #CF6C20;
+    background-color: #CF6C20; 
+}
+.circle-5:hover{
+    animation: circle 1.2s ease-out;
+    box-shadow: 0px 0px 10px 1px #E6771F;
+    background-color: #E6771F; 
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+@keyframes circle{
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: scaleY(0.94);
+    }
+    70%{
+        transform: translateY(-10px);
+    }
+    90%{
+        transform: scaleY(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
